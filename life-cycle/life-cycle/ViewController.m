@@ -16,7 +16,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"Current method == %@",NSStringFromSelector(_cmd));
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"Current method == %@",NSStringFromSelector(_cmd));
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"Current method == %@",NSStringFromSelector(_cmd));
+}
+
+-(void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    NSLog(@"Current method == %@",NSStringFromSelector(_cmd));
+}
+
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    NSLog(@"Current method == %@",NSStringFromSelector(_cmd));
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    NSLog(@"Current method == %@",NSStringFromSelector(_cmd));
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    NSLog(@"Current method == %@",NSStringFromSelector(_cmd));
 }
 
 
