@@ -74,33 +74,44 @@ viewController 之间的跳转
   按钮点击跳转，执行present
 
   --vc2-- viewDidLoad
+  
     --v1-- viewWillDisappear:
+    
       --v2-- viewWillAppear:
+      
         --v2-- viewWillLayoutSubviews
+        
           --v2-- viewDidLayoutSubviews
+          
             --v2-- viewDidAppear:
+            
               --v1-- viewDidDisappear:
+              
                 --v1-- present completion
-                ---------------------------------
-                ///[self presentViewController:[LhwTestViewController new] animated:YES completion:^{
+                /*---------------------------------
+                [self presentViewController:[LhwTestViewController new] animated:YES completion:^{
        
         NSLog(@"present completion");
     }];//
-    -------------------------------------------------
+    -------------------------------------------------*/
 
 2.vc2 dismiss (pop) vc1
 
   --v2-- viewWillDisappear:
+  
     --v1-- viewWillAppear:
+    
       --v1-- viewDidAppear:
+      
        --v2-- viewDidDisappear:
+       
         --v2-- dismiss completion
 
-  ------------------------------------------------------
+  //*------------------------------------------------------
   [self dismissViewControllerAnimated:YES completion:^{
         NSLog(@"dismiss completion");
     }];
-  -----------------------------------------------------
+  -----------------------------------------------------*/
 
 
   
