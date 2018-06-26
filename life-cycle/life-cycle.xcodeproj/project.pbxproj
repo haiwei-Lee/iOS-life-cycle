@@ -15,6 +15,7 @@
 		9B684E3E20E0F48700A9B75F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B684E3D20E0F48700A9B75F /* main.m */; };
 		9B684E4820E0F48700A9B75F /* life_cycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B684E4720E0F48700A9B75F /* life_cycleTests.m */; };
 		9B684E5320E0F48800A9B75F /* life_cycleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B684E5220E0F48800A9B75F /* life_cycleUITests.m */; };
+		9B8A277620E1DDFC00AE7BFD /* LhwTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A277520E1DDFC00AE7BFD /* LhwTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		9B684E4E20E0F48800A9B75F /* life-cycleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "life-cycleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B684E5220E0F48800A9B75F /* life_cycleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = life_cycleUITests.m; sourceTree = "<group>"; };
 		9B684E5420E0F48800A9B75F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8A277420E1DDFC00AE7BFD /* LhwTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LhwTestViewController.h; sourceTree = "<group>"; };
+		9B8A277520E1DDFC00AE7BFD /* LhwTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LhwTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				9B684E2F20E0F48500A9B75F /* AppDelegate.m */,
 				9B684E3120E0F48500A9B75F /* ViewController.h */,
 				9B684E3220E0F48500A9B75F /* ViewController.m */,
+				9B8A277420E1DDFC00AE7BFD /* LhwTestViewController.h */,
+				9B8A277520E1DDFC00AE7BFD /* LhwTestViewController.m */,
 				9B684E3420E0F48500A9B75F /* Main.storyboard */,
 				9B684E3720E0F48700A9B75F /* Assets.xcassets */,
 				9B684E3920E0F48700A9B75F /* LaunchScreen.storyboard */,
@@ -194,7 +199,7 @@
 		9B684E2320E0F48500A9B75F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = Lhw;
+				CLASSPREFIX = Lhw_;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "首约科技（北京）有限公司 Inc.";
 				TargetAttributes = {
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8A277620E1DDFC00AE7BFD /* LhwTestViewController.m in Sources */,
 				9B684E3320E0F48500A9B75F /* ViewController.m in Sources */,
 				9B684E3E20E0F48700A9B75F /* main.m in Sources */,
 				9B684E3020E0F48500A9B75F /* AppDelegate.m in Sources */,

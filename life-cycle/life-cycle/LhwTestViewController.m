@@ -1,38 +1,29 @@
 //
-//  ViewController.m
+//  LhwTestViewController.m
 //  life-cycle
 //
-//  Created by lee on 2018/6/25.
+//  Created by lee on 2018/6/26.
 //  Copyright © 2018年 首约科技（北京）有限公司 Inc. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "LhwTestViewController.h"
 
-@interface ViewController ()
+@interface LhwTestViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LhwTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@ Current method == %@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
-    
+    // Do any additional setup after loading the view.
     UIButton * button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 200, 60)];
     button.center = self.view.center;
     button.backgroundColor = [UIColor redColor];
-    [button setTitle:@"tip" forState:UIControlStateNormal];
+    [button setTitle:@"dismiss" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)buttonClicked{
-    [self presentViewController:[LhwTestViewController new] animated:YES completion:^{
-       
-        NSLog(@"present completion");
-    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -65,10 +56,26 @@
 }
 
 
+- (void)buttonClicked{
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"dismiss completion");
+    }];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

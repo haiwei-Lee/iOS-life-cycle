@@ -44,5 +44,63 @@
   --applicationWillResignActive:
   APP进入不活跃状态
 
+7.杀死程序
+
+  --applicationWillResignActive:
+    --applicationDidEnterBackground:
+      --applicationWillTerminate
+
+  APP将不活跃->APP进入后台->APP将要销毁
+
+8.APP从卡片状态，恢复
+
+  --applicationDidBecomeActive:
+
+  APP将要活跃
+
+9.APP从卡片状态，切换到别的APP
+
+  --applicationDidEnterBackground:
+
+  APP进入后台
+
+
+---------------------------------------------------------
+
+viewController 之间的跳转
+
+1.vc1 present (push) vc2
+
+  按钮点击跳转，执行present
+
+  --vc2-- viewDidLoad
+    --v1-- viewWillDisappear:
+      --v2-- viewWillAppear:
+        --v2-- viewWillLayoutSubviews
+          --v2-- viewDidLayoutSubviews
+            --v2-- viewDidAppear:
+              --v1-- viewDidDisappear:
+                --v1-- present completion
+                ---------------------------------
+                ///[self presentViewController:[LhwTestViewController new] animated:YES completion:^{
+       
+        NSLog(@"present completion");
+    }];//
+    -------------------------------------------------
+
+2.vc2 dismiss (pop) vc1
+
+  --v2-- viewWillDisappear:
+    --v1-- viewWillAppear:
+      --v1-- viewDidAppear:
+       --v2-- viewDidDisappear:
+        --v2-- dismiss completion
+
+  ------------------------------------------------------
+  [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"dismiss completion");
+    }];
+  -----------------------------------------------------
+
 
   
