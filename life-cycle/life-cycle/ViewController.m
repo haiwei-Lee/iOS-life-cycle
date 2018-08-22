@@ -29,10 +29,11 @@
 }
 
 - (void)buttonClicked{
-    [self presentViewController:[LhwTestViewController new] animated:YES completion:^{
-       
-        NSLog(@"present completion");
-    }];
+//    [self presentViewController:[LhwTestViewController new] animated:YES completion:^{
+//       
+//        NSLog(@"present completion");
+//    }];
+    [self.navigationController pushViewController:[LhwTestViewController new] animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -62,6 +63,10 @@
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
     NSLog(@"%@ Current method == %@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+}
+
+-(void)dealloc{
+     NSLog(@"%@ Current method == %@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
 }
 
 

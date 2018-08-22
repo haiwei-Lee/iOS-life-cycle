@@ -62,6 +62,10 @@
     }];
 }
 
+-(void)dealloc{
+    NSLog(@"%@ Current method == %@",NSStringFromClass([self class]),NSStringFromSelector(_cmd));
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

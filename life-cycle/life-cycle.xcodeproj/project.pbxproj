@@ -16,6 +16,7 @@
 		9B684E4820E0F48700A9B75F /* life_cycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B684E4720E0F48700A9B75F /* life_cycleTests.m */; };
 		9B684E5320E0F48800A9B75F /* life_cycleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B684E5220E0F48800A9B75F /* life_cycleUITests.m */; };
 		9B8A277620E1DDFC00AE7BFD /* LhwTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8A277520E1DDFC00AE7BFD /* LhwTestViewController.m */; };
+		9BA9A5D52123C7A6003FE3D8 /* Lhw_commonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9A5D42123C7A6003FE3D8 /* Lhw_commonTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		9B684E5420E0F48800A9B75F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B8A277420E1DDFC00AE7BFD /* LhwTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LhwTestViewController.h; sourceTree = "<group>"; };
 		9B8A277520E1DDFC00AE7BFD /* LhwTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LhwTestViewController.m; sourceTree = "<group>"; };
+		9BA9A5D42123C7A6003FE3D8 /* Lhw_commonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lhw_commonTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				9B684E4720E0F48700A9B75F /* life_cycleTests.m */,
+				9BA9A5D42123C7A6003FE3D8 /* Lhw_commonTest.m */,
 				9B684E4920E0F48800A9B75F /* Info.plist */,
 			);
 			path = "life-cycleTests";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA9A5D52123C7A6003FE3D8 /* Lhw_commonTest.m in Sources */,
 				9B684E4820E0F48700A9B75F /* life_cycleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
